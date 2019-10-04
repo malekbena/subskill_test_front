@@ -1,0 +1,54 @@
+.b {
+    border: 1px red solid
+}
+
+.cover {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.logo {
+    height: 200px;
+    width: 200px;
+}
+
+.headerTitle {
+    color: white;
+    font-size: 4.5rem
+}
+
+.blackCustom {
+    color: black;
+}
+
+.bgBlackCustom {
+    background-color: black;
+}
+
+.purpleColor {
+    color: #de216b
+}
+
+.formInput {
+    border: 1px #ff7e33 solid;
+}
+
+.contactBtn {
+    background-color: #fcb82b;
+    border: 0px;
+    color: white;
+    height: 50px;
+}
+
+.aboutTitle {
+    font-size: 2.6rem;
+}
+.aboutP{
+    font-size: 1.3rem
+}
+.aboutBtn{
+    background-color:#de216b;
+    color: white;
+    border : 0px
+}

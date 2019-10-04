@@ -1,0 +1,7 @@
+.collapseTitle {
+    color: white;
+    font-size: 4.5rem;
+}
+#customCollapse:hover{
+    cursor: pointer
+}

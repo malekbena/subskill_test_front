@@ -162,7 +162,7 @@ export default class ContactForm extends React.Component {
                                     <Input required className={`formInput ${this.checkError("phone") && "inputError"}`} pattern="[0-9]{10}" type="tel" name="phone" id="phone" onChange={(e) => { this.handleUpdateField({ name: "phone", value: e.target.value }) }} />
                                     {this.checkError("phone") && <p className="text-danger">Vous devez saisir votre numèro</p>}
                                     <Label for="email" className="mb-0 mt-3">Adresse email</Label>
-                                    <Input required className={`formInput ${this.checkError("email") && "inputError"}`} type="text" pattern="[^\W][a-zA-Z0-9]+(.[a-zA-Z0-9]+)@[a-zA-Z0-9]+(.[a-zA-Z0-9]+).[a-zA-Z]{2,4}" name="email" id="email" onChange={(e) => { this.handleUpdateField({ name: "email", value: e.target.value }) }} />
+                                    <Input required className={`formInput ${this.checkError("email") && "inputError"}`} type="text" pattern="[a-z0-9.-]+@[a-z0-9.-]{2,}.[a-z]{2,4}" name="email" id="email" onChange={(e) => { this.handleUpdateField({ name: "email", value: e.target.value }) }} />
                                     {this.checkError("email") && <p className="text-danger">Vous devez saisir votre email</p>}
                                         <legend className='mt-5'><b>Que faites-vous de mes données ?</b></legend>
                                     <Label check className="ml-4">

@@ -67,13 +67,13 @@ export default class ContactForm extends React.Component {
                                 <legend>1. Avez-vous déjà contacté la Fongecif ?</legend>
                                 <FormGroup check>
                                     <Label check >
-                                        <Input className="" value={true} defaultChecked onChange={(e) => { this.handleUpdateField({ name: "fongecif", value: e.target.value }) }} type="radio" name="fongecif" />{' '}
+                                        <Input className="" value={"oui"} defaultChecked onChange={(e) => { this.handleUpdateField({ name: "fongecif", value: e.target.value }) }} type="radio" name="fongecif" />{' '}
                                         <span className="ml-3 text-capitalize">oui</span>
                                     </Label>
                                 </FormGroup>
                                 <FormGroup check>
                                     <Label check>
-                                        <Input className="" type="radio" value={false} name="fongecif" onChange={(e) => { this.handleUpdateField({ name: "fongecif", value: e.target.value }) }} />{' '}
+                                        <Input className="" type="radio" value={"non"} name="fongecif" onChange={(e) => { this.handleUpdateField({ name: "fongecif", value: e.target.value }) }} />{' '}
                                         <span className="ml-3 text-capitalize">non</span>
                                     </Label>
                                 </FormGroup>

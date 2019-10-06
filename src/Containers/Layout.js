@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Container, Row, Col } from 'reactstrap'
+import { Container } from 'reactstrap'
 
 
 class Layout extends Component {
@@ -17,6 +17,7 @@ class Layout extends Component {
                                 }} />
                         </div>
                         <div className="col-lg-4 d-flex mx-auto mr-5">
+                            
                             <a className="mr-5" href="#">Accueil</a>
                             <a className="mr-5" href="#">Contactez-nous</a>
                             <a className="mr-5" href="#">Mentions légales</a>

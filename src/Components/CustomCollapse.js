@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Collapse, Button, CardBody, Card, Col } from 'reactstrap';
+import { Collapse } from 'reactstrap';
 import "./CustomCollapse.css"
 
 class CustomCollapse extends Component {

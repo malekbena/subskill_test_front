@@ -6,7 +6,7 @@ import { DOMAIN } from '../Helpers/Config'
 import { updateField } from "../Helpers/Func"
 
 
-import { Button, Form, FormGroup, Label, Input, Spinner, Col, Container } from 'reactstrap';
+import { Button, Form, FormGroup, Label, Input, Spinner, Container } from 'reactstrap';
 import "./ContactForm.css"
 
 export default class ContactForm extends React.Component {

@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
-import { Col, Row, Button } from "reactstrap"
+import { Col, Row, Button, Container } from "reactstrap"
+import "./About.css"
 
 class About extends Component {
     render() {
         return (
-            <Col className="mt-5 aboutP p-5">
+            <Container fluid className="mt-5 paragraph p-5">
                 <Row>
-
-                    <Col lg={6} className="justify-content-between aboutP d-flex flex-column">
-                        <p className="aboutTitle">
+                    <Col lg={6} className="justify-content-between d-flex flex-column">
+                        <p className="aboutSubTitle">
                             <span className="purpleColor">Le CPF de transition professionnelle </span>
                             est un nouveau dispositif qui remplace
                             le Congé individuel de formation
@@ -19,14 +19,13 @@ class About extends Component {
                             permet a tout salarié de suivre, à son initiative et à titre individuel, une formation longue et certifiante en de
                             <span className="purpleColor"> changer de métier ou de profession. </span>
                         </p>
-                        <p className="purpleColor aboutTitle"> Qui peut en bénéficier ? </p>
+                        <p className="purpleColor contentTitle"> Qui peut en bénéficier ? </p>
                     </Col>
                     <Col
                         lg={6}
-                        className="cover"
+                        className="cover aboutImg"
                         style={{
                             backgroundImage: "url(img/IMG_Sourire.png)",
-                            height: "680px"
                         }}>
                     </Col>
                     <Row className="p-3">
@@ -45,34 +44,35 @@ class About extends Component {
                         </p>
                     </Row>
                 </Row>
-                <p className="purpleColor aboutTitle col-5">Le CFP de transition professionnelle c'est quoi ?</p>
+                <p className="purpleColor contentTitle col-lg-6 ">Le CFP de transition professionnelle c'est quoi ?</p>
                 <div className="justify-content-center d-flex">
                     <iframe width="1536px" height="860px" src="https://www.youtube.com/embed/qjsUSUdw6lk" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                 </div>
                 <Row className="mt-5">
                     <Col
                         lg={5}
-                        className="cover"
+                        className="cover aboutImg"
                         style={{
                             backgroundImage: "url(img/IMG_Meunuiserie.png)",
-                            height: "724px"
                         }}>
                     </Col>
-                    <Col>
-                        <p className="aboutTitle text-uppercase purpleColor">le financement</p>
-                        <p>
-                            La mobilisation des droits inscrits au Compte 
-                            Personnel de Formation (CPF) permet de 
-                            contribuer au financement de la formation.
-                            Les frais pédagogiques et les frais liés à 
-                            la formation sont assurés par le Fongecif.
-                            Pendant la formation, la rémunération du 
-                            salarié est en partie maintenue.
-                        </p>
-                        <Button className="text-capitalize aboutBtn">En savoir plus</Button>
+                    <Col className="justify-content-between d-flex flex-column ml-5">
+                        <div>
+                            <p className="contentTitle purpleColor">le financement</p>
+                            <p>
+                                La mobilisation des droits inscrits au Compte 
+                                Personnel de Formation (CPF) permet de 
+                                contribuer au financement de la formation.
+                                Les frais pédagogiques et les frais liés à 
+                                la formation sont assurés par le Fongecif.
+                                Pendant la formation, la rémunération du 
+                                salarié est en partie maintenue.
+                            </p>
+                        </div>
+                        <Button className="aboutBtn">En savoir plus</Button>
                     </Col>
                 </Row>
-            </Col>
+            </Container>
         );
     }
 }

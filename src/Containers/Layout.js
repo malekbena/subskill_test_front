@@ -1,44 +1,43 @@
 import React, { Component } from 'react';
-import { Container, Row } from 'reactstrap'
+import { Container, Row, Col } from 'reactstrap'
+
 
 class Layout extends Component {
     render() {
         return (
-            <Container fluid className="p-0">
+            <Container fluid className="p-0 mainContainer">
+                
                 {this.props.children}
-                <footer className="bgBlackCustom justify-content-between mt-3">
-                    <Row className="d-flex align-items-center">
-                        <div className="col">
-                        <div
-                            className="cover logo"
-                            style={{
-                                backgroundImage: "url(img/logo.png)",
-                                backgroundSize: "contain",
-                            }} />
+                <footer className="bgBlackCustom d-flex align-items-center col-12 pb-3">
+                        <div className="col-lg logoFooter">
+                            <div
+                                className="cover logo"
+                                style={{
+                                    backgroundImage: "url(img/logo.png)",
+                                }} />
                         </div>
-                        <div className="col-4 justify-content-between d-flex mr-5">
-                            <a href="#">Accueil</a>
-                            <a href="#">Contactez-nous</a>
-                            <a href="#">Mentions légales</a>
+                        <div className="col-lg-4 d-flex mx-auto mr-5">
+                            <a className="mr-5" href="#">Accueil</a>
+                            <a className="mr-5" href="#">Contactez-nous</a>
+                            <a className="mr-5" href="#">Mentions légales</a>
                         </div>
-                        <div className="col-3 justify-content-between d-flex">    
+                        <div className="col-lg-3 d-flex mt-3">
                             <a href="#">
-                                <img src="img/facebook.png" />
+                                <img className="socials" src="img/facebook.png" alt="socials" />
                             </a>
                             <a href="#">
-                                <img src="img/twitter.png" />
+                                <img className="socials" src="img/twitter.png" alt="socials" />
                             </a>
                             <a href="#">
-                                <img src="img/youtube.png" />
+                                <img className="socials" src="img/youtube.png" alt="socials" />
                             </a>
                             <a href="#">
-                                <img src="img/linkedin.png" />
+                                <img className="socials" src="img/linkedin.png" alt="socials" />
                             </a>
                             <a href="#">
-                                <img src="img/instagram.png" />
+                                <img className="socials" src="img/instagram.png" alt="socials" />
                             </a>
                         </div>
-                    </Row>
                 </footer>
             </Container>
         );

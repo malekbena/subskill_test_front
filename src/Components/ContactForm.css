@@ -1,0 +1,71 @@
+.formTitle{
+    text-transform: uppercase;
+    font-family: 'static_Bold';
+    font-size: 3rem;
+    font-weight: 700
+}
+.formContent{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1rem
+}
+
+.formInput {
+    border: 1px #fcb82b solid !important;
+}
+
+.contactBtn {
+    background-color: #fcb82b !important;
+    color: white;
+    border : 0px !important;
+    max-width: 25%;
+    padding: 20px !important;
+    text-transform: uppercase;
+    align-self: flex-end
+}
+
+input[type='radio'] {
+    box-sizing: border-box;
+    appearance: none;
+    background: white;
+    outline: 2px solid #fcb82b;
+    width: 16px;
+    height: 16px;
+}  
+input[type='radio']:checked {
+    background: #fcb82b;
+}
+input[type='radio']:hover {
+    cursor: pointer;
+}
+input[type='checkbox'] {
+    box-sizing: border-box;
+    appearance: none;
+    background: white;
+    outline: 2px solid #fcb82b;
+    width: 16px;
+    height: 16px;
+}  
+input[type='checkbox']:checked {
+    background: #fcb82b;
+}
+input[type='checkbox']:hover {
+    cursor: pointer;
+}
+
+.inputError{
+    border: 1px red solid !important;
+}
+
+@media (max-width: 768px) {
+    .formTitle{
+        font-size: 1.5rem
+    }
+    .formContent{
+        padding: 0px !important;
+    }
+    .contactBtn {
+        max-width: 100%;
+        align-self: flex-start
+    }
+}

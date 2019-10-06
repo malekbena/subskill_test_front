@@ -15,13 +15,12 @@ class CustomCollapse extends Component {
         return (
             <div id="customCollapse">
                 <div
-                    className="cover mt-3  justify-conten-center d-flex align-items-center"
+                    className="cover collapseImg mt-3 justify-conten-center d-flex align-items-center"
                     style={{
                         backgroundImage: `url(img/${this.props.img}.png)`,
-                        height: '900px'
                     }}
                     onClick={this.toggle}>
-                    <p className="collapseTitle mx-auto text-center text-uppercase col-6"> {this.props.title} </p>
+                    <p className="collapseTitle mx-auto text-center text-uppercase col-lg-6"> {this.props.title} </p>
                 </div>
                 <Collapse isOpen={this.state.collapse}>
 

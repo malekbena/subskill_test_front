@@ -1,13 +1,22 @@
+.howTitle {
+    color: #ff5e00;
+    text-transform: uppercase;
+    font-family: 'static_Bold';
+    font-size: 2.5rem
+}
+
 .howTitleLight {
     color: white;
     text-transform: uppercase;
-    font-size: 2rem
+    font-size: 2rem;
+    font-weight: 700
 }
 
 .howTitleOrange {
     color: #ff5e00;
     text-transform: uppercase;
-    font-size: 2rem
+    font-size: 2rem;
+    font-weight: 700
 }
 
 .bgOrange {
@@ -45,8 +54,33 @@
 }
 
 .howBtn {
-    border: 0px;
-    background-color: #ff5e00;
+    background-color: #ff5e00 !important;
     color: white;
-    height: 50px;
+    border : 0px !important;
+    max-width: 25%;
+    padding: 20px !important;
+    text-transform: uppercase;
+}
+
+@media (max-width: 768px) { 
+    .howTitle {
+        font-size: 1.3rem
+    }
+    
+    .howTitleLight {
+        color: white;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        font-weight: 700
+    }
+    
+    .howTitleOrange {
+        color: #ff5e00;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        font-weight: 700
+    }
+    .howBtn {
+        max-width: 100%;
+    }
 }

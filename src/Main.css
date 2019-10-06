@@ -2,6 +2,10 @@
     border: 1px red solid
 }
 
+.mainContainer{
+    overflow: hidden
+}
+
 .cover {
     background-size: cover;
     background-position: center;
@@ -9,14 +13,37 @@
 }
 
 .logo {
+
     height: 200px;
     width: 200px;
+    background-size: contain;
+}
+.header{
+    position: relative;
+    overflow: hidden
 }
 
 .headerTitle {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
     color: white;
-    font-size: 4.5rem
+    font-size: 5rem
 }
+.headerTitle>span{
+    font-weight: 700
+}
+.headerBar{
+    background-color: rgba(128, 128, 128, 0.5);
+    height: 50px;
+    margin-bottom: 0px;
+    width: calc(75% / 2)
+}
+
+.scrollBtn{
+    background-color: rgba(128, 128, 128, 0.5);
+    top: calc(-100% + 5px) 
+}
+
 
 .blackCustom {
     color: black;
@@ -30,25 +57,91 @@
     color: #de216b
 }
 
-.formInput {
-    border: 1px #ff7e33 solid;
+a{
+    color: white;
+    text-decoration: none
+}
+a:hover{
+    color: white;
+    text-decoration: none
 }
 
-.contactBtn {
-    background-color: #fcb82b;
-    border: 0px;
-    color: white;
+.paragraph{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 2rem
+}
+.contentTitle {
+    font-size: 3.5rem;
+    font-family: 'static_Bold';
+    text-transform: uppercase
+}
+
+.socials{
     height: 50px;
+    margin-right: 50px
 }
 
-.aboutTitle {
-    font-size: 2.6rem;
+footer{
+    margin-top: 15px;
 }
-.aboutP{
-    font-size: 1.3rem
+
+
+
+
+
+
+/* @font-face kit by Fonts2u (https://fonts2u.com) */ 
+@font-face {
+    font-family:"StaticBold";
+    src:
+    url("fonts/Static_Bold.eot?") format("eot"),
+    url("fonts/Static_Bold.woff") format("woff"),
+    url("fonts/Static_Bold.ttf") format("truetype"),
+    url("fonts/Static_Bold.svg#StaticBold") format("svg");
+    font-weight:normal;
+    font-style:normal;}
+
+
+
+
+@media (max-width: 768px) {
+    .container {
+        padding:0;
+        margin:0;
+    }
+    body {
+        padding:0;
+    } 
+    .headerTitle{
+        font-size: 2rem
+    }
+    .logo{
+        height: 100px;
+        width: 100px;
+    }
+    .contentTitle{
+        font-size: 2rem;
+        overflow: initial
+
+    }
+    .paragraph{
+        font-size: 1.2rem;
+        padding: 5px !important;
+        margin : 0px !important;
+    }
+    footer{
+        display: flex;
+        flex-direction: column
+    }
+    .logoFooter{
+        display: flex;
+        justify-content: center
+    }
+    .socials{
+        height: 25px;
+        margin-right: 50px
+    }
+
 }
-.aboutBtn{
-    background-color:#de216b;
-    color: white;
-    border : 0px
-}
+
